@@ -11,10 +11,9 @@ Scaffolding for npm package
 
 [mffr][] is required.
 
-    $ git clone https://github.com/cybertk/npm-js-scaffolding.git
-    $ cd npm-js-scaffolding
-    $ mv README-APP.md README.md
-    $ mffr npm-js-scaffolding <your_package_name>
+    git clone https://github.com/cybertk/npm-js-scaffolding.git
+    cd npm-js-scaffolding
+    ./bootstrap.sh <your_package_name> <dest_dir>
 
 [mffr]: https://github.com/cybertk/mffr
 
@@ -24,4 +23,4 @@ Scaffolding for npm package
 
     $ npm test
 
-Any contribution is more then welcome!
+Any contribution is more than welcome!
