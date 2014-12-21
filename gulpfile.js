@@ -4,7 +4,9 @@ var istanbul = require('gulp-istanbul');
 var coveralls = require('gulp-coveralls');
 var gulpif = require('gulp-if');
 
-gulp.task('test', function () {
+var is_travis = process.env['TRAVIS'] !== undefined
+
+gulp.task('test', function (done) {
     return gulp.src('index.js')
         .pipe(istanbul())
         .pipe(istanbul.hookRequire())
@@ -14,7 +16,8 @@ gulp.task('test', function () {
                 .pipe(istanbul.writeReports({reporters: ['text-summary', 'lcovonly', 'html']}))
                 .on('end', function () {
                     gulp.src('coverage/lcov.info')
-                        .pipe(gulpif(process.env['TRAVIS'], coveralls()))
+                        .pipe(gulpif(is_travis, coveralls()))
+                        .on('end', done)
                 })
         });
 });
