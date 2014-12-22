@@ -1,6 +1,6 @@
 ## npm-js-scaffolding
 
-Mongoose ORM Document Pagination Based on Ranged Query
+> npm-js-scaffolding
 
 [![Build Status](https://travis-ci.org/cybertk/npm-js-scaffolding.svg?branch=master)](https://travis-ci.org/cybertk/npm-js-scaffolding)
 [![Dependency Status](https://david-dm.org/cybertk/npm-js-scaffolding.svg)](https://david-dm.org/cybertk/npm-js-scaffolding)
@@ -8,9 +8,6 @@ Mongoose ORM Document Pagination Based on Ranged Query
 [![Coverage Status](https://img.shields.io/coveralls/cybertk/npm-js-scaffolding.svg)](https://coveralls.io/r/cybertk/npm-js-scaffolding)
 
 ## Features
-
-- next_max_id
-- count
 
 ## Installation
 
@@ -29,4 +26,4 @@ Mongoose ORM Document Pagination Based on Ranged Query
 
     $ npm test
 
-Any contribution is more then welcome!
+Any contribution is more than welcome!
