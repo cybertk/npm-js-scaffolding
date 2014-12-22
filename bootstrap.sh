@@ -3,7 +3,7 @@
 NAME=$1
 DEST=$2/${NAME}
 
-mffr npm-js-scaffolding ${NAME} -f
+mffr npm-js-scaffolding ${NAME} -f -g "*.md" -g "*.js" -g "package.json"
 mkdir ${DEST}
 cp LICENSE gulpfile.js package.json index.js .travis.yml .gitignore .npmignore ${DEST}
 cp README-APP.md ${DEST}/README.md
