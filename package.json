@@ -22,11 +22,11 @@
   "homepage": "https://github.com/cybertk/npm-js-scaffolding",
   "devDependencies": {
     "chai": "~2.2.0",
-    "gulp": "^3.8.11",
-    "gulp-coveralls": "^0.1.3",
-    "gulp-if": "^1.2.5",
-    "gulp-istanbul": "^0.7.0",
-    "gulp-mocha": "^2.0.1"
+    "gulp": "~3.8.11",
+    "gulp-coveralls": "~0.1.3",
+    "gulp-if": "~1.2.5",
+    "gulp-istanbul": "~0.7.0",
+    "gulp-mocha": "~2.0.1"
   },
   "dependencies": {
   }
